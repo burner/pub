@@ -98,8 +98,8 @@ we say that `S` is "inconclusive" for `t`. As a shorthand, we say that a term
 example:
 
 * `{foo >=1.0.0, foo <2.0.0}` satisfies `foo ^1.0.0`,
-* `foo ^1.5.0` contradicts `not foo ^1.0.0`,
-* and `foo ^1.0.0` is inconclusive for `foo ^1.5.0`.
+* `{foo ^1.5.0}` contradicts `not foo ^1.0.0`,
+* and `{foo ^1.0.0}` is inconclusive for `foo ^1.5.0`.
 
 Terms can be viewed as denoting sets of allowed versions, with negative terms
 denoting the complement of the corresponding positive term. Set relations and
